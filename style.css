@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lobster+Two:ital@1&family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+ul {
+    list-style: none;
+}
+.container {
+    display: flex;
+}
+
+.lateral-menu {
+    background: #000;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.lateral-menu ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.content {
+    background: rgb(178, 151, 151);
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+.card{
+    background-color: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 25);
+    border-radius: 16px;
+    margin: 0 20px;
+    height: 140px;
+    width: 230px;
+    object-fit: contain;
+}
+
+
+.card-content{
+    display: flex;
+    margin: 1px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.cardsprin {
+    display: flex;
+}
+
+.cards-header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-info h2 {
+    font-size: 54px;
+    font-weight: bold;
+    color: chocolate;
+    margin-right: 30px;
+}
+
+.card-info p {
+    font-size: 16px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
