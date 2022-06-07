@@ -37,16 +37,91 @@ document.addEventListener("DOMContentLoaded", function () {
       var xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == XMLHttpRequest.DONE) {
-          var res = JSON.parse(this.response);
+          var res = JSON.parse(this.response); 
           document.getElementById("name").value = res.name;
           document.getElementById("height").value = res.height;
-          document.getElementById("birth_year").value = res.birth_year;
+          document.getElementById("hair_color").value = res.hair_color;
+          document.getElementById("gender").value = res.gender;
+          document.getElementById("eye_color").value = res.eye_color;
         }
       };
-  
+
       xmlhttp.open("GET", myHEADER);
-  
       xmlhttp.send();
       console.log("acabou");
     });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+        var buscarFilmes = document.getElementById("buscarFilmes");
+      
+        buscarFilmes.addEventListener("click", function () {
+          var idFilmes = $("#idFilmes").val();
+      
+          var myHEADER = "https://swapi.dev/api/films/" + idFilmes + "";
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+              var rest = JSON.parse(this.response);
+              document.getElementById("title").value = rest.title;
+              document.getElementById("episode_id").value = rest.episode_id;
+              document.getElementById("director").value = rest.director;
+              document.getElementById("producer").value = rest.producer;
+              document.getElementById("release_date").value = rest.release_date;
+            }
+        };
+  
+        xmlhttp.open("GET", myHEADER);
+        xmlhttp.send();
+        console.log("acabou");
+      });
   });
+    document.addEventListener("DOMContentLoaded", function () {
+
+    var buscarNaves = document.getElementById("buscarNaves");
+    
+    buscarNaves.addEventListener("click", function () {
+      var idNaves = $("#idNaves").val();
+    
+      var myHEADER = "https://swapi.dev/api/starships/" + idNaves + "";
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+          var rest = JSON.parse(this.response);
+          document.getElementById("nameN").value = rest.name;
+          document.getElementById("passengers").value = rest.passengers;
+          document.getElementById("manufacturer").value = rest.manufacturer;
+        }
+    };
+    
+    xmlhttp.open("GET", myHEADER);
+    xmlhttp.send();
+    console.log("acabou");
+    });
+    });
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    var buscarPlanetas = document.getElementById("buscarPlanetas");
+  
+    buscarPlanetas.addEventListener("click", function () {
+      var idPlanetas = $("#idPlanetas").val();
+  
+      var myHEADER = "https://swapi.dev/api/planets/" + idPlanetas + "";
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+          var rest = JSON.parse(this.response);
+          console.log(rest.episode_id)
+          document.getElementById("nameP").value = rest.name;
+          document.getElementById("gravity").value = rest.gravity;
+          document.getElementById("terrain").value = rest.terrain;
+        }
+    };
+
+    xmlhttp.open("GET", myHEADER);
+    xmlhttp.send();
+    console.log("acabou");
+  });
+});
