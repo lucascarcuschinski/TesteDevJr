@@ -15,7 +15,7 @@ ul {
 }
 
 .lateral-menu {
-    background: #000;
+    background: rgb(0, 0, 0);
     color: white;
     width: 250px;
     height: 100vh;
@@ -39,8 +39,8 @@ ul {
 .content {
     background: rgb(178, 151, 151);
     width: 100%;
-    display: flex;
-    justify-content:center;
+    display: block;
+    justify-content: center;
 }
 
 .card{
@@ -88,4 +88,31 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.table {
+    background-color: #fff;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+.infos {
+    background: rgb(216, 141, 94);
+    display: inline-block;
+    justify-content: center;
+    margin: 8px;
+    border-radius: 16px;
+    padding: 20px;
+
+}
+
+.infos h2 {
+    font-size: 30px;
+    margin: -20px;
+    display: flex;
+}
+
+.button {
+    display: block;
 }
