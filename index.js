@@ -125,3 +125,18 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("acabou");
   });
 });
+
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+          var rest = JSON.parse(this.response);
+          console.log(rest.episode_id)
+          document.getElementById("nameP").value = rest.name;
+          document.getElementById("gravity").value = rest.gravity;
+          document.getElementById("terrain").value = rest.terrain;
+        }
+    };
+
+    xmlhttp.open("GET", myHEADER);
+    xmlhttp.send();
+    console.log("acabou");
+  });
+});
