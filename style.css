@@ -37,14 +37,14 @@ ul {
 }
 
 .content {
-    background: rgb(178, 151, 151);
+    background: rgb(133, 149, 233);
     width: 100%;
     display: block;
     justify-content: center;
 }
 
 .card{
-    background-color: #fff;
+    background-color: rgb(234, 223, 223);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 25);
     border-radius: 16px;
     margin: 0 20px;
@@ -97,22 +97,85 @@ ul {
     padding: 10px;
 }
 
+.allinfos {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 0 20px;
+    height: 200px;
+    width: 230px;
+    object-fit: contain;
+
+}
+
 .infos {
-    background: rgb(216, 141, 94);
-    display: inline-block;
-    justify-content: center;
-    margin: 8px;
+    
+    background: rgb(97, 144, 185);
+    display: flexbox;
     border-radius: 16px;
     padding: 20px;
+    align-items: stretch;
+    object-fit: contain;
 
+    width: 400px;
+    height: 400px;
+    margin: 0 20px;
+
+    box-shadow: 5px 5px 25px rgb(255, 255, 255);
+
+
+}
+
+
+.infos p {
+    font-size: 1px;
 }
 
 .infos h2 {
-    font-size: 30px;
-    margin: -20px;
-    display: flex;
+    font-size: 15px;
+    margin: 2px;
+    align-items: center;
+    padding: 1px;
 }
 
 .button {
+    display: flex;
+}
+
+
+
+.infos2 {
+    background: rgb(97, 144, 185);
+    display: flexbox;
+    border-radius: 16px;
+    padding: 20px;
+    align-items: stretch;
+
+    width: 400px;
+    height: 400px;
+    margin: 0 20px;
+
+    box-shadow: 5px 5px 25px rgb(255, 255, 255);
+
+
+}
+
+.infos2 h2 {
+    font-size: 15px;
+    margin: 2px;
+    align-items: center;
+    padding: 1px;
+}
+
+.infos2 p {
+    font-size: 1px;
+}
+
+.info-content {
     display: block;
+    margin: 1px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
