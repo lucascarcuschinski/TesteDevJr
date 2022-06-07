@@ -73,31 +73,72 @@
                     </div>
                 </div>
             </div>
-
-            <label>Procurar por pessoas </label><br />
-            <input type="text" placeholder="ponha um número" id="idPeople" /><br />
+        <div class="infos">
+            <label><h2>Procurar por personagens</h2> </label><br />
+            <input type="text" placeholder="Digite um número de 1 a 82" id="idPeople" /><br />
             <button id="buscarPeople">Procurar</button>
             <div class="resultadoPeople">
-              <label> Nome </label>
+              <label> Nome: </label>
               <input disabled="true" type="text" id="name" /><br />
-              <label> Filmes </label>
-              <input disabled="true" type="text" id="films" /><br />
-              <labe> Naves </labe>
-              <input disabled="true" type="text" id="starships" /><br />
-              <labe> Planetas </labe>
-              <input disabled="true" type="text" id="planets" /><br />
+              <label> Altura: </label>
+              <input disabled="true" type="text" id="height" /><br />
+              <label> Cor do cabelo: </label>
+              <input disabled="true" type="text" id="hair_color" /><br />
+              <label> Gênero: </label>
+              <input disabled="true" type="text" id="gender" /><br />
+              <label> Cor do olho: </label>
+              <input disabled="true" type="text" id="eye_color" /><br />
             </div>
-        
+        </div>
+        <div class="infos">
+            <label><h2>Procurar por Filmes</h2> </label><br />
+            <input type="text" placeholder="Digite um número de 1 a 6" id="idFilmes" /><br />
+            <button id="buscarFilmes">Procurar</button>
+            <div class="resultadoFilmes">
+              <label> Título: </label>
+              <input disabled="true" type="text" id="title" /><br />
+              <label> Episódio: </label>
+              <input disabled="true" type="text" id="episode_id" /><br />
+              <label> Diretor: </label>
+              <input disabled="true" type="text" id="director" /><br />
+              <label> Produtor: </label>
+              <input disabled="true" type="text" id="producer" /><br />
+              <label> Data de lançamento: </label>
+              <input disabled="true" type="text" id="release_date" /><br />
+            </div>
+        </div>
+        <div class="infos">
+            <label><h2>Procurar por Naves</h2> </label><br />
+            <input type="text" placeholder="Digite um número aleatório entre 2 e 100" id="idNaves" /><br />
+            <button id="buscarNaves">Procurar</button>
+            <div class="resultadoNaves">
+              <label> Nome: </label>
+              <input disabled="true" type="text" id="nameN" /><br />
+              <label> Capacidade de passageiros: </label>
+              <input disabled="true" type="text" id="passengers" /><br />
+              <label> Fabricante: </label>
+              <input disabled="true" type="text" id="manufacturer" /><br />
+
+            </div>
+        </div>
+        <div class="infos">
+            <label><h2>Procurar por Planetas</h2> </label><br />
+            <input type="text" placeholder="Digite um número de 2 a 37" id="idPlanetas" /><br />
+            <button id="buscarPlanetas">Procurar</button>
+            <div class="resultadoPlanetas">
+              <label> Nome: </label>
+              <input disabled="true" type="text" id="nameP" /><br />
+              <label> Gravidade: </label>
+              <input disabled="true" type="text" id="gravity" /><br />
+              <label> Terreno </label>
+              <input disabled="true" type="text" id="terrain" /><br />
+
+            </div>
+        </div>
             <footer>
-              <script src="js.js"></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
             </footer>
-        <script src="js.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      </footer>
-    <script> 
-        feather.replace();
-    </script>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
 
